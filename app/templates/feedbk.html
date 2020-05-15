@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<head lang="en">
+  <title>feedback</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1><b><i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FEEDBACK</i></b></h1>
+<br>
+
+<div class="container">
+<div class="jumbotron">
+
+  <form class="form-horizontal" action="feedbk_data" method="post">{% csrf_token %}
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="name">Name:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="fname">Father Name:</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="fname" placeholder="Enter Father Name" name="fname" required="required">
+      </div>
+    </div>
+      <div class="form-group">
+      <label  class="control-label col-sm-2" for="sel1">Course</label>
+          <div class="col-sm-4">
+      <select class="form-control" id="sel1" name = "course">
+        <option>Choose course </option>
+          <option>B.TECH</option>
+        <option>BBA</option>
+        <option>BCA</option>
+        <option>MCA</option>
+          <option>MCA(LEET)</option>
+          <option>MBA</option>
+          <option>M.TECH</option>
+          <option>DIPLOMA</option>
+          <option>DIPLOMA(LEET)</option>
+      </select>
+          </div>
+      </div>
+
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-4">
+        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required="required">
+      </div>
+    </div>
+      <div class="form-group">
+      <label class="control-label col-sm-2" for="contact number">Contact Number: </label>
+      <div class="col-sm-4">
+        <input type="tel" class="form-control" id="contact number" placeholder="Enter Contact Number: " name="number" required="required">
+      </div>
+    </div>
+           <div class="form-group">
+      <label class="control-label col-sm-2" for="comment">Comment: </label>
+      <div class="col-sm-4">
+          <textarea class="form-control" id="comment" row="5" placeholder="Enter Comment: " name="comment" required="required"></textarea>
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

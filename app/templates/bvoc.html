@@ -1,0 +1,345 @@
+{% load static %}
+<!DOCTYPE html>
+<head lang="en">
+  <title>bvoc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<style>
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+    padding-top: 100px;
+}
+footer {
+    padding: 30px 0;
+}
+
+/*
+ * Custom styles
+ */
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #000;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+.footer{
+	padding: 60px 0;
+    width: 100%;
+    background: gray;
+    color: #000000;
+
+}
+.footer-title{
+	position: relative;
+    color: #fff;
+	font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4e4e4e;
+}
+.footer-title:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	height: 4px;
+	background: #ff304d;
+}
+.footer-links a{
+	padding: 10px 0;
+	border-bottom: 1px solid #404040;
+	color: #fff;
+	display: block;
+	transition: color 0.5s ease-in-out;
+   text-decoration:none;
+}
+.footer-links a:hover{
+	color: #ff304d;
+}
+.footer-social-links li{
+	display: inline-block;
+}
+.footer-social-links a{
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+	border: 1px solid #404040;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+  background:#3B008D;
+}
+.footer-social-links a:hover{
+	background: #ff304d;
+}
+/* g. Footer bottom section */
+.footer-bottom{
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	background:black;
+}
+
+
+
+</style>
+
+</head>
+<body>
+    <div style="height:10px">
+<div class="container-fluid">
+<nav class="navbar  navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+                    <div class="logo">
+             <a href="#"> <img src="{% static 'images/logo-piet2.png' %}" style="width:100%"></a>
+         </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+            <li><a href="home">HOME</a></li>
+                        <li><a href="about">ABOUT US</a></li>
+
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="ug">UG COURSES</a></li>
+          <li><a href="pg">PG COURSES</a></li>
+          <li><a href="diploma">DIPLOMA</a></li>
+            <li><a href="summarized">SUMMARIZED COURSE DURATION</a></li>
+        </ul>
+             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="programs">PROGRAMMES OFFERED</a></li>
+          <li><a href="elig">ELIGIBILITY</a></li>
+
+        </ul>
+      </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SYLLABUS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=ODY=&page=1">UG COURSES SYLLABUS</a></li>
+          <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=MTU5">PG COURSES SYLLABUS</a></li>
+
+        </ul>
+      </li>
+                        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> STUDENT LOGIN</a></li>
+       <li><a href="tlogin"><span class="glyphicon glyphicon-home"></span> GATE PASS</a></li>
+                    </ul>
+
+
+                        <ul class="nav navbar-nav navbar-right">
+
+         <li><a><span class="glyphicon glyphicon-phone-alt"></span>1800 3000 6884</a></li>
+
+    </ul>
+		                  </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+   <div class="container-fluid">
+  <img src="{% static 'images/bvoc.png' %}" style="width:100%";>
+  </div><br><br>
+
+        <div class="container">
+
+            <div class="row row-offcanvas row-offcanvas-right">
+
+                <div class="col-xs-12 col-sm-9">
+                    <p class="pull-right visible-xs">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                    </p>
+                    <div class="jumbotron">
+                        <h2><b><u><i>BACHELOR OF VOCATION (BFSI) :-</i></u></b></h2>
+                        <p>
+Vocational education or Vocational Education and Training (VET), also called Career and Technical Education (CTE), prepares learners for jobs that are based in manual or practical activities, traditionally non-academic and totally related to a specific trade, occupation or vocation, hence the term, in which the learner participates. It is sometimes referred to as technical education, as the learner directly develops expertise in a particular group of techniques or technology.<br>
+
+                            <b>Vocation and Career</b><br>
+
+Generally, vocation and career are used interchangeably. Vocational education might be classified as teaching procedural knowledge. This may be contrasted with declarative knowledge, as used in education in a usually broader scientific field, which might concentrate on theory and abstract conceptual knowledge, characteristic of tertiary education.<br>
+
+Vocational education can be at the secondary or post-secondary level and can interact with the apprenticeship system. Increasingly, vocational education can be recognised in terms of recognition of prior learning and partial academic credit towards tertiary education (e.g., at a university) as credit; however, it is rarely considered in its own form to fall under the traditional definition of a higher education.<br>
+
+Up until the end of the twentieth century, vocational education focused on specific trades such as for example, an automobile mechanic or welder, and was therefore associated with the activities of lower social classes. As a consequence, it attracted a level of stigma. Vocational education is related to the age-old apprenticeship system of learning.<br>
+
+                        <br><h4><b>For Bachelor of Vocation : 3 Years (Semester System) Admission:</b></h4>
+
+                        <h4><b>Name of the Course:</h4></b>Banking, Financial Services & Insurance
+                        <h4><b>Duration:</h4></b>	3 years
+                        <h4><b>Total Seats:</h4></b>25
+                        <h4><b>Fees :</b></h4>
+                        <b>*</b> Total Fee (Annual) : 600008<br>
+<b>*</b>Tuition Fee (Annual) : 25000<br>
+<b>*</b>Payable in 1st Sem. : 32000<br>
+<b>*</b>Payable in Nov. /Dec. : 28000<br>
+                        <h4><b>Eligibility :</b></h4>
+10+2 Pass with 45% marks (42.75% marks in case of SC/ST category) in any stream with English as a compulsory subject from CBSE or any other State Education Board.</p>
+                </div>
+                </div>
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                 <div class="list-group">
+
+                     <a href="btech" class="list-group-item ">B.TECH</a>
+
+                       <a href="mtech" class="list-group-item  ">M.TECH</a>
+
+                        <a href="bca" class="list-group-item ">BCA</a>
+
+                       <a href="mca" class="list-group-item ">MCA</a>
+                     <a href="mca2" class="list-group-item ">MCA(LEET)</a>
+                     <a href="bba" class="list-group-item ">BBA</a>
+                     <a href="mba" class="list-group-item ">MBA</a>
+                     <a href="diploma1" class="list-group-item ">Diploma in Mechenical Engg.</a>
+                     <a href="diploma1" class="list-group-item">Diploma in Mechenical Engg.(2nd Year)</a>
+                     <a href="bvoc" class="list-group-item active">B.VOC</a>
+                     <a href="pharmacy" class="list-group-item">Diploma in Pharmacy</a>
+
+
+
+                    </div>
+                </div><!--/.sidebar-offcanvas-->
+            </div><!--/row-->
+        </div>
+
+            <div class="row">
+    	<div class="col-md-12">
+    	    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						About us
+					</div>
+					<p class="white-text">
+					Located in the National Capital Region, Panipat Institute of Engineering & Technology (PIET) was established by the Vidyapeeth Education. The founders have a clear vision to provide world-class education and research. In venture of this cherished goal, PIET has achieved many milestones of success. Among some of the best Engineering Colleges in Haryana and National Capital Region, PIET stands out a clear leader. A multidisciplinary institute affiliated to Kurukshetra University, Kurukshetra and approved by AICTE, New Delhi.
+					</p>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Useful Links
+					</div>
+					<div class="footer-links">
+						<a href="programs">
+							Programmes Offered
+						</a>
+                        	<a href="elig">
+							Eligibility
+						</a>
+
+						<a href="placement">
+							Placements
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Quick Links
+					</div>
+					<div class="footer-links">
+						<a href="login">
+							 Student Login
+						</a>
+                        <a href="tlogin">
+							 Gate Pass
+						</a>
+						<a href="feedbk">
+							Feedback
+						</a>
+
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Location
+					</div>
+					<div class="footer-links">
+						<p>
+							PIET Campus:<br>
+              70, Milestone GT Road, Samalkha,<br>
+              Panipat, Haryana - 132102<br>
+              India<br>
+              Call: 1800 3000 6884 (Toll Free),<br>0180-2569700, 2569799, 2569699<br>
+						</p>
+						<p>
+              Email:info@piet.co.in
+            </p>
+
+					</div>
+
+					<div class="footer-social-links m-t-30">
+						<li>
+							<a href="https://www.facebook.com/Pietofficial/">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="https://twitter.com/PIETPanipat">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.linkedin.com/school/pietpanipat/">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.youtube.com/c/PietTalkies">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+                           <a href="https://plus.google.com/u/0/+PietCoInpanipat/">
+                               <i class="fa fa-google" aria-hidden="true"></i></a>
+                           <a href="https://in.pinterest.com/pietpanipat/">
+								<i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                           <a href="https://www.instagram.com/connectatpiet/">
+								<i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</div>
+                </div>
+            </div>
+	</footer>
+	<div class="footer-bottom">
+	</div>
+    	</div>
+	</div>
+
+</body>
+</html>

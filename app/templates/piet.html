@@ -1,0 +1,595 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PIET</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <style>
+
+     .bg-1 {
+    background-color: #000000;
+    color: #F0F8FF;
+  }
+  .bg-2
+  {
+   background-color: white;
+    color: #000000;
+    }
+    .bg-3
+    {
+    background-color:black;
+    color: #000000;
+    }
+
+    .ss
+    {
+    background-color:black;
+    color:white;
+    }
+
+.footer{
+	padding: 60px 0;
+    width: 100%;
+    background: #000000;
+    color: #fff;
+
+}
+.footer-title{
+	position: relative;
+    color: #fff;
+	font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4e4e4e;
+}
+.footer-title:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	height: 4px;
+	background: #ff304d;
+}
+.footer-links a{
+	padding: 10px 0;
+	border-bottom: 1px solid #404040;
+	color: #fff;
+	display: block;
+	transition: color 0.5s ease-in-out;
+   text-decoration:none;
+}
+.footer-links a:hover{
+	color: #ff304d;
+}
+.footer-social-links li{
+	display: inline-block;
+}
+.footer-social-links a{
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+	border: 1px solid #404040;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+  background:#3B008D;
+}
+.footer-social-links a:hover{
+	background: #ff304d;
+}
+/* g. Footer bottom section */
+.footer-bottom{
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	background:gray;
+}
+
+
+</style>
+<body>
+<div style="height:90px">
+<nav class="navbar  navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+         <div class="logo">
+              <img src="{% static 'images/logo-piet2.png' %}">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      </div>
+    </div>
+
+ <ul class="nav navbar-nav ">
+     <li class="active"><a href="home">HOME</a></li>
+     <li ><a href="about">ABOUT US</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="ug">UG COURSES</a></li>
+          <li><a href="pg">PG COURSES</a></li>
+          <li><a href="diploma">DIPLOMA</a></li>
+            <li><a href="summarized">SUMMARIZED COURSE DURATION</a></li>
+
+        </ul>
+      </li>
+
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="programs">PROGRAMMES OFFERED</a></li>
+          <li><a href="elig">ELIGIBILITY</a></li>
+
+        </ul>
+      </li>
+
+     <li ><a href="placement">PLACEMENTS</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SYLLABUS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=ODY=&page=1">UG COURSES SYLLABUS</a></li>
+          <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=MTU5">PG COURSES SYLLABUS</a></li>
+
+        </ul>
+      </li>
+
+
+     <li ><a href="feedbk">FEEDBACK</a></li>
+    <li><a href="login"><span class="glyphicon glyphicon-log-in"></span>  STUDENT LOGIN</a></li>
+         <li><a href="tlogin"><span class="glyphicon glyphicon-home"></span> GATE PASS</a></li>
+ </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <li><a><span class="glyphicon glyphicon-phone-alt"></span>1800 3000 6884</a></li>
+
+          </ul>
+</div>
+</div>
+</nav>
+</div>
+<br><br><br>
+ <div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static 'images/img1.png' %}"  style="width:61%;">
+
+        <div class="carousel-caption">
+            <h1 style="color:black"><kbd>START-UP 4.0</kbd></h1>
+        </div></div>
+
+      <div class="item">
+        <img src="{% static 'images/im2.png' %}" style="width:100%;">
+
+          <div class="carousel-caption">
+              <h1 style="color:black"><kbd>ENGINEERING 4.0</kbd></h1>
+        </div></div>
+
+      <div class="item">
+        <img src="{% static 'images/im3.png' %}" style="width:100%;">
+
+          <div class="carousel-caption">
+              <h1 style="color:black"><kbd>MANAGMENT 4.0</kbd></h1>
+        </div></div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+
+    </a>
+  </div>
+</div><br><br><br>
+<br><br>
+<div class="container">
+    <center><button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">PIET – Assuring your future with Enterprise 4.0 oriented learning....click here for more information....</button></center>
+  <div id="demo" class="collapse">
+    <h1><b><i>PIET is amongst the top engineering colleges in Haryana
+        and leading the way with course-curriculum in Engineering, Management & Technology designed
+        for Ensterprise 4.0. The workplace of the future will be all about different skill sets as well
+        as automated collaborators. PIET’s Education 4.0, with its emphasis on Analytics, AI, Robotics
+        and other new age learning frameworks ensures you are ready to face the world of tomorrow, successfully.
+        PIET is a multi-disciplinary institute affiliated to Kurukshetra University, Kurukshetra and approved by
+        AICTE. For over a decade PIET has maintained its #1 position amongst the best engineering
+        colleges in Haryana and is also coveted as a leading MBA college in Haryana. Committed to
+        developing new age leaders with a holistic approach and futuristic orientation, its graduates
+        are regularly placed in top MNCs, blue-chip companies & start-ups. We inspire excellence using
+        innovative teaching methods as well as the human skill-sets necessary to succeed in the disruptive
+        & transformative world of the future.</font></h1>
+  </div>
+</div><br><br><br>
+
+<div class="container-fluid bg-1 text-center">
+    <h1 class="margin"><u><b><center>WE ARE PIETIANS</center></b></u></h1><br>
+  <div class="row">
+    <div class="col-sm-4">
+        <p><h2><center style="font-family: 'Lobster';">PIET MAESTROS:</center></h2>PIET organizes ‘Maestros”an inter-institute technical and cultural fest to provide a unique and conceptual learning opportunity to the students.It aims at showcasing the various scientific research and cultural activities, in other words, the fest is the incorporation of creativities, talents and innovations.</p>
+      <img src="{% static 'images/p1.png' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+        <p><h2><center style="font-family: 'Lobster';">PIET QUEST:</center></h2> A pride Talent-hunt Project
+
+PIET is always known for creativity and vibrancy. There is a plethora of events organized annually. PIET Quest is a unique kind of fest organized to recognize and reward the latent talents of Arts, Science and Commerce stream talent from schools, colleges, and polytechnics since 2008.</p>
+      <img src="{% static 'images/p2.png' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4">
+        <p><h2><center style="font-family: 'Lobster';">PIET CARBUNCLE:</center></h2> Panipat Institute of Engineering and Technology organizes an annual sumptuous fresher’s welcome party i.e. Carbuncle</p>
+      <img src="{% static 'images/p3p.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div><br><br><br>
+
+<div class="container ">
+    <marquee bgcolor="black" ; direction="left"> <img src="{% static 'images/wipro2.jpg' %}" style="width:9%;">&nbsp&nbsp&nbsp&nbsp
+        <img src="{% static 'images/hp1.jpg' %}" style="width:10%;">&nbsp&nbsp&nbsp&nbsp
+         <img src="{% static 'images/accenture1.jpg' %}" style="width:10%;">&nbsp&nbsp&nbsp&nbsp
+         <img src="{% static 'images/microsoft1.jpg' %}"style="width:10%;">&nbsp&nbsp
+         <img src="{% static 'images/infosys1.jpg' %}"style="width:10%;">&nbsp&nbsp
+         <img src="{% static 'images/oracle1.jpg' %}"style="width:10%;">&nbsp&nbsp
+         <img src="{% static 'images/flipkart1.jpg' %}"style="width:10%;">&nbsp&nbsp
+         <img src="{% static 'images/samsung1.jpg' %}"style="width:10%;">&nbsp&nbsp
+        <img src="{% static 'images/dell1.jpg' %}"style="width:10%;">&nbsp&nbsp
+        <img src="{% static 'images/sap1.jpg' %}"style="width:10%;">&nbsp&nbsp
+        <img src="{% static 'images/tata1.jpg' %}"style="width:10%;">
+    </marquee>
+</div><br><br><br><br><br>
+<div class="container bg-2">
+    <center style="font-family: 'Lobster';"><h2><b><u>STUDENTS' SPEAK</u></b></h2></></center>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h3>"My package at EY (Ernst & Young) is of 13 Lac p.a. An excellent institute of
+            higher learning which has enriched its students with very practical
+            insights relative to the theoretical knowledge. Gifted with the best faculty
+            members, each professor's genuine compassion for the students's progression
+            allow one to excel in their career and become a name rather than a number.
+            Am proud to be a PIETian...!!!"
+            <br><img src="{% static 'images/priya_sood.jpg.webp' %}" style=" border-radius: 50%;"/>
+            <br>Priya Sood(IT),
+            EY (Ernst & Young),Gurugram</h3>
+      </div>
+      <div class="item">
+        <h3>"I am serving as commissioned officer in Indian Navy & my salary is 7.5 Lac p.a.. The
+            faculty at PIET is always ready to instruct and push students to perform their best.
+            Focus is given on class-room as well as self learning through the various assignments
+            and projects. "
+            <br><img src="{% static 'images/tanu.jpg.webp' %}" style=" border-radius: 50%;"/>
+             <br>Tanushree (IT),
+            Indian Navy</h3>
+      </div>
+      <div class="item">
+        <h3>"I have only great things to say about PIET. I can speak with confidence and immense
+            happiness that my life has been completely changed by the quality education and
+            knowledge, I gained from PIET. My current package in Facebook  is equal to INR 1.4 Cr.
+            p.a.  I am placed just because of the quality education and international placement opportunities provided by the Institute
+            which meet the International Standards."
+            <br><img src="{% static 'images/shrey.jpg.webp' %}" style=" border-radius: 50%;"/>
+            <br>Shrey Mittal (IT),
+        Facebook Inc., USA</h3>
+      </div>
+    </div>
+
+
+</div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+     <div class="container-fluid ss">
+         <div class="row">
+      <div class="col-sm-4">
+       <div class="list-group">
+
+           <div class="list-group-item active"><h2><i><b>PLACEMENTS HIGHLIGHTS</b></i></h2></div>
+                        <marquee direction="up" style="color:black";><div class="list-group-item";><img src="{% static 'images/ph1.png' %}">
+                            Average Salaries INR 3.15 Lac P.A. & The Highest Package Goes As High As INR 54 Lac P.A.</div>
+
+                       <div class="list-group-item"><img src="{% static 'images/ph2.png' %}">
+                           More Than 180+ Corporate Houses Have Recruited Students From PIET.</div>
+
+                        <div class="list-group-item"><img src="{% static 'images/ph3.png' %}">Awarded For Best Placements In The Region Consecutively In 2014, 2015, And 2016.</div>
+
+                       <div class="list-group-item"><img src="{% static 'images/ph4.png' %}">Adjudged The Best And Most Preferred Placement Partner By Corporate Houses.</div>
+
+                     <div class="list-group-item"><img src="{% static 'images/ph5.png' %}">Alumni Working With Facebook, Google And Walmart Etc.</div>
+
+                     <div class="list-group-item"><img src="{% static 'images/ph6.png' %}">
+All The Three Wings Of Indian Defence Services Recruit Students From PIET.</div>
+                        </marquee>
+
+                </div><!--/.sidebar-offcanvas   ...Awarded For Best Placements In The Region Consecutively In 2014, 2015, And 2016.....  -->
+            </div><!--/row-->
+
+
+
+      <div class="col-sm-4">
+      <div class="list-group">
+
+          <div class="list-group-item active "><h2><i><b>NEWS & EVENTS</b></i></h2></div>
+                        <marquee direction="up" ><a href="#" class="list-group-item">Orientation Programme for B.Tech. 1st Year starts from 5th August, 2019 onwards.</a>
+
+                       <a href="#" class="list-group-item">Holday Calendar-2019</a>
+
+                        <a href="#" class="list-group-item">Students who have completed their Graduation / Post Graduation and their Degree is not received from the University. They are required to submit /email their last semester DMC (with scaled marks) to academic branch.</a>
+
+                       <a href="#" class="list-group-item">Grievance Redressal Committee</a>
+
+                     <a href="#" class="list-group-item">Anti-Ragging Committee</a>
+
+                     <a href="#" class="list-group-item">Newsletter (Departmentwise)</a></marquee>
+
+
+                </div><!--/.sidebar-offcanvas-->
+            </div><!--/row-->
+
+
+      <div class="col-sm-4">
+          <div class="list-group">
+
+              <div class="list-group-item active"><h2><i><b>PLACEMENTS NEWS</b></i></div>
+              <marquee direction="up" ><a href="https://docs.google.com/forms/d/e/1FAIpQLSc-UWtgW7-9pcuUKRpiBZJSE9gKOoU2qt_Ng_d6S6vehsPiCg/viewform?c=0&w=1s" class="list-group-item">Register for upcoming drives for 2018 batch</a>
+
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRch83kGOc782S3dVl7PwsJMRvvYXgOd6rBjoLN_8DIHx0nA/viewform" class="list-group-item">Piet Student Registration-2019 batch</a></marquee>
+
+
+
+                </div><!--/.sidebar-offcanvas-->
+            </div><!--/row-->
+</div>
+         </div><br<br><br>
+
+
+    <div class="container">
+  <table class="table"  style="background-color: black">
+    <thead>
+      <tr>
+        <th style="background-color:black";><a href="#" style="color:white"><h1><b><u>
+        Programmes Offered:-</u></b></h1></a></th>
+
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+          <td style="background-color: black";><a href="btech" style="color:white"><h3><i>Bachelor of Technology(B.Tech)</i></h3></i></h3></h3></a></td>
+          <td style="background-color: black"><a href="mtech" style="color:white"><h3><i>Master of Technology(M.Tech)</i></h3></a></td>
+
+      </tr>
+
+      <td style="background-color: black";><a href="bba" style="color:white"><h3><i>Bachelor of Business Administration(BBA)</i></h3></a></td>
+      <td style="background-color: black"><a href="mba" style="color:white"><h3><i>Master of Business Administration(MBA)</i></h3></a></td>
+      </tr>
+
+      <td style="background-color: black"><a href="bca" style="color:white"><h3><i>Bachelor of Computer Application(BCA)</i></h3></a></td>
+      <td style="background-color: black"><a href="mca" style="color:white"><h3><i>Master of Computer Application(MCA)</i></h3></a></td>
+        </tr>
+
+
+      <td style="background-color: black"><a href="mca2" style="color:white"><h3><i>Master of Computer Application (LEET)</i></h3></a></td>
+      <td style="background-color: black"><a href="diploma1" style="color:white"><h3><i>Diploma in Mechenical Engg.</i></h3></a></td>
+
+      </tr>
+
+      <td style="background-color: black"><a href="diploma1" style="color:white"><h3><i>Diploma in Mechenical Engg.(2nd Year)</i></h3></a></td>
+      <td style="background-color: black"><a href="bvoc" style="color:white"><h3><i>Banking Financial Services & Insurance(B.Voc)</i></h3></a></td>
+
+      </tr>
+      <td style="background-color: black"><a href="pharmacy" style="color:white"><h3><i>Diploma in Pharmacy</i></h3></a></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div><br><br><br><br>
+
+    <div class="container-fluid bg-3">
+     <div class="row text-center">
+         <center > <U><B><i><h1 style="color:white">AWARDS & ACHEIVEMENTS</h1></i></B></U></center><BR>
+         <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw1.webp' %}" alt="Piet" width="400" height="300">
+          <p><strong>Awarded Best Engineering College in Haryana (2015)</strong></p>
+          <p>by Mr. Lalit Gattani, CEO and Mr. Anuj Agarwal, Editor in Chief, The Dialogue India</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw2.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Best Institute for Academic Excellence & Placement in Delhi-NCR (2017)</strong></p>
+          <p>by The Dialogue India in collaboration with "Amar Ujala" in its (5th India Academia Award 2017) ceremony
+              at Chandigarh on 3rd June 2017 by the Hon'ble Minister of State (Haryana) Sh. Manish Kumar Grover and
+              Sh. Anuj Agarwal, Editor in Chief, The Dialogue India</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw3.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Best Institute for Excellent Placement in Delhi-NCR (2016)</strong></p>
+          <p>by Sh. Upendra Kushwaha, Hon'ble Minister of State for Human Resource Development (SE),
+              Government of India and Smt. Kirron Kher, Hon’ble Member of Parliament</p>
+        </div>
+      </div>
+         </div>
+         <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw4.webp' %}" alt="Piet" width="400" height="300">
+          <p><strong>Awarded Best Placement and Best Engineering College of North India (2015)</strong></p>
+          <p>by Prof. (Dr.) Ram Shankar Katheria, Hon’ble Minister of State HRD, Govt. of India</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw5.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Best Engineering College in Delhi-NCR (2014)</strong></p>
+          <p>by Sh. Kapil Sibal, Hon’ble Minister of Communication & Information & Minister of Law & Justice,
+              Government of India</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw6.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Academic Excellence & Best Placement in the Region-2014</strong></p>
+          <p>by Dr. Shashi Tharoor, Hon’ble Minister of State for Human Resource Development, Government
+              of India & Sh. M. S. Bitta, Chairman AIATF</p>
+        </div>
+      </div>
+    </div>
+          <div class="row">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw7.webp' %}" alt="Piet" width="400" height="300">
+          <p><strong>Awarded Best Engineering & Management College in Haryana (2016)</strong></p>
+          <p>by Sh. Madan Chouhan, Hon’ble Minister (UP), Sh. Anuj Agarwal, Editor-in-Chief, Dialogue India, Sh. J. S. Rajput, NCRT Director and Mrs. Santosh Yadav (First Women Mount Everest Climber)</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw8.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Best Engineering College in Haryana and Among Top 20 Engineering College in North India (2018)</strong></p>
+          <p>by The Dialogue India in its (Academia Conclave and Award Function 2018) Ceremony at IIT, Delhi on 19th May, 2018 by the Hon’ble Union Minister of State Agriculture and Farmers Welfare, Smt. Krishna Raj and Lieutenant General Sh. G.D Bakshi .</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="{% static 'images/aw9.webp' %}"  alt="piet" width="400" height="300">
+          <p><strong>Awarded Clean Campus Award (2017)</strong></p>
+          <p>PIET Campus adjudged and awarded as one of the cleanest campus by AICTE.</p>
+        </div>
+      </div>
+    </div>
+
+
+         </div>
+    </div><br><br><br>
+
+
+  <div class="row">
+    	<div class="col-md-12">
+    	    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						About us
+					</div>
+					<p class="white-text">
+					Located in the National Capital Region, Panipat Institute of Engineering & Technology (PIET) was established by the Vidyapeeth Education. The founders have a clear vision to provide world-class education and research. In venture of this cherished goal, PIET has achieved many milestones of success. Among some of the best Engineering Colleges in Haryana and National Capital Region, PIET stands out a clear leader. A multidisciplinary institute affiliated to Kurukshetra University, Kurukshetra and approved by AICTE, New Delhi.
+					</p>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Useful Links
+					</div>
+					<div class="footer-links">
+						<a href="programs">
+							Programmes Offered
+						</a>
+                        	<a href="elig">
+							Eligibility
+						</a>
+
+						<a href="placement">
+							Placements
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Quick Links
+					</div>
+					<div class="footer-links">
+						<a href="login">
+                            Student Login
+						</a>
+                        <a href="tlogin">
+                            Gate Pass
+						</a>
+						<a href="feedbk">
+							Feedback
+						</a>
+
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Location
+					</div>
+					<div class="footer-links">
+						<p>
+							PIET Campus:<br>
+              70, Milestone GT Road, Samalkha,<br>
+              Panipat, Haryana - 132102<br>
+              India<br>
+              Call: 1800 3000 6884 (Toll Free),<br>0180-2569700, 2569799, 2569699<br>
+						</p>
+						<p>
+                            Email:info@piet.co.in
+            </p>
+
+					</div>
+
+					<div class="footer-social-links m-t-30">
+						<li>
+							<a href="https://www.facebook.com/Pietofficial/">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="https://twitter.com/PIETPanipat">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.linkedin.com/school/pietpanipat/">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.youtube.com/c/PietTalkies">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+                           <a href="https://plus.google.com/u/0/+PietCoInpanipat/">
+                               <i class="fa fa-google" aria-hidden="true"></i></a>
+                           <a href="https://in.pinterest.com/pietpanipat/">
+								<i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                           <a href="https://www.instagram.com/connectatpiet/">
+								<i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</div>
+                </div>
+            </div>
+	</footer>
+	<div class="footer-bottom">
+	</div>
+    	</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+{% load static %}
+<!DOCTYPE html>
+<head lang="en">
+  <title>eligibility</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!------ Include the above in your HEAD tag ---------->
+
+<style>
+body {
+    overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+    padding-top: 100px;
+}
+footer {
+    padding: 30px 0;
+}
+
+/*
+ * Custom styles
+ */
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #000;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+
+.footer{
+	padding: 60px 0;
+    width: 100%;
+    background: gray;
+    color: #000000;
+
+}
+.footer-title{
+	position: relative;
+    color: #fff;
+	font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #4e4e4e;
+}
+.footer-title:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	height: 4px;
+	background: #ff304d;
+}
+.footer-links a{
+	padding: 10px 0;
+	border-bottom: 1px solid #404040;
+	color: #fff;
+	display: block;
+	transition: color 0.5s ease-in-out;
+   text-decoration:none;
+}
+.footer-links a:hover{
+	color: #ff304d;
+}
+.footer-social-links li{
+	display: inline-block;
+}
+.footer-social-links a{
+	width: 40px;
+	height: 40px;
+	font-size: 16px;
+	float: left;
+	margin-right: 10px;
+	padding: 10px;
+	border: 1px solid #404040;
+	border-radius: 50px;
+	text-align: center;
+	color: #fff;
+	line-height: 1;
+	-webkit-transition: background 0.3s ease-in-out;
+	-moz-transition: background 0.3s ease-in-out;
+	transition: background 0.3s ease-in-out;
+  background:#3B008D;
+}
+.footer-social-links a:hover{
+	background: #ff304d;
+}
+/* g. Footer bottom section */
+.footer-bottom{
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	color: #fff;
+	background:black;
+}
+
+
+
+</style>
+
+</head>
+<body>
+     <div style="height:10px">
+<div class="container-fluid">
+<nav class="navbar  navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+                    <div class="logo">
+             <a href="#"> <img src="{% static 'images/logo-piet2.png' %}" style="width:100%"></a>
+         </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+            <li><a href="home">HOME</a></li>
+                        <li><a href="about">ABOUT US</a></li>
+
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">COURSES<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="ug">UG COURSES</a></li>
+          <li><a href="pg">PG COURSES</a></li>
+          <li><a href="diploma">DIPLOMA</a></li>
+            <li><a href="summarized">SUMMARIZED COURSE DURATION</a></li>
+        </ul>
+
+                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ADMISSIONS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="programs">PROGRAMMES OFFERED</a></li>
+          <li><a href="elig">ELIGIBILITY</a></li>
+
+        </ul></li>
+
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SYLLABUS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=ODY=&page=1">UG COURSES SYLLABUS</a></li>
+          <li><a href="http://www.kuk.ac.in/information.php?m=Yg==&L01_id=MTQ=&L01_direction=H&L02_id=MTU5">PG COURSES SYLLABUS</a></li>
+
+        </ul>
+      </li>
+                        <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> STUDENT LOGIN</a></li>
+      <li><a href="tlogin"><span class="glyphicon glyphicon-home"></span> GATE PASS</a></li>
+                    </ul>
+
+
+  <ul class="nav navbar-nav navbar-right">
+         <li><a><span class="glyphicon glyphicon-phone-alt"></span>1800 3000 6884</a></li>
+
+    </ul>
+		                  </div><!-- /.nav-collapse -->
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+   <div class="container-fluid">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static 'images/el2.png' %}"  style="width:100%;">
+      </div>
+
+
+      <div class="item">
+        <img src="{% static 'images/el2.png' %}" style="width:100%;">
+      </div>
+
+
+      <div class="item">
+        <img src="{% static 'images/el2.png' %}" style="width:100%;">
+      </div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div><br><br>
+
+        <div class="container">
+
+            <div class="row row-offcanvas row-offcanvas-right">
+
+                <div class="col-xs-12 col-sm-9">
+                    <p class="pull-right visible-xs">
+                        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                    </p>
+                    <div class="jumbotron">
+                        <h2><b><u><i>ELIGIBILITY :</i></u></b></h2>
+                        <p><h3><b> A) Admission through Haryana State Tech. Education Society, Panchkula.</b></h3>
+                    <h4><b>1. Bachelor of Technology (B.Tech.) (4 years):</b></h4>
+10+2 with Physics, Mathematics as compulsory subjects & Chemistry/Computer Science/Informatics Practices as optional Subject, obtaining at least 45% marks (42.75% marks in case of SC/ ST category).
+
+Admissions to B.Tech. Courses are based on JEE Merit Rank. For complete information, please visit: http//hstes.org OR www.hstes.in and http//tehadmissions.gov.in
+
+                    <h4><b>2. Bachelor of Technology (LEET) 2nd year (3 years):</b></h4>
+Candidates must have passed Diploma in Engineering Technology course of 3 years duration or more from State Board of Technical Education Haryana or its equivalent with at least 45% marks (42.75% for SC/ST) in aggregate. Or should be pass in B.Sc. Degree of minimum three year duration from a recognised university with Mathematics as a subject in 12th Standard, with at least 45% marks in aggregate (42.75% in case of SC/ST Candidates).
+
+Note: Admissions shall be made on the basis of the inter –se merit of OLET (LEET Engg.) 2019 conducted by NIC online on the website: www.onlinetesthry.nic.in. Eligibility and other guidelines are the same as given in the brochure.
+
+                    <h4><b>3. Master of Business Administration (MBA 2 years):</b></h4>
+Graduate or Post Graduate in any stream with 50% marks (47.50% marks for SC/ST). Admission to MBA programme is based on the Composite Score of CMAT/MAT.
+
+                    <h4><b>4. Diploma in Mechanical Engineering (2nd Shift 3 Years):</b></h4>
+Pass in 10th Examination with at least 35% (33% for SC/ ST) marks from Board of School Education, Haryana or equivalent examination from a recognised Board /University.
+
+                    <h4><b>5. Diploma in Mechanical Engineering (LEET):</b></h4>
+ITI of at least two years’ duration or 10+2 with PCM or 10+2 vocational.
+
+                    <h4><b>6. Diploma in Pharmacy</b></h4>
+10+2 with Physics, Chemistry, Bio / Maths from recognised Board.<br>
+
+                    <b>Note: The admission for Diploma in Engineering and Pharmacy will be made on merit basis by HSTES Panchkula.</b>
+
+                        <h3><b>B) Admission on the basis of inter –se merit as per the provision of Kurukshetra University:</b></h3>
+                    <h4><b>1. Master of Technology (M.Tech. 2 years):</b></h4>
+B.Tech. with 50% (47.50% for SC/ST candidate). Marks and merit of GATE score.<br>
+
+                    <b>Note: Admission to M.Tech. programme will be as per guidelines of the University.</b>
+
+                    <h4><b>2. Bachelor of Business Administration (BBA 3 years):</b></h4>
+10+2 Pass with 50% marks in any stream with English as a compulsory subject from CBSE or any other State Education Board.
+
+                    <h4><b>3. Bachelor of Computer Applications (BCA 3 years):</b></h4>
+10+2 Pass with at least 50% marks from CBSE or Board of School Education, Haryana or any other examination equivalent thereto.
+
+                    <h4><b>4. Master of Computer Applications (MCA 3 years):</b></h4>
+50% marks (47.50% for SC/ST) in Graduate or Post Graduate in any stream with Maths/Statistics as one of the subjects.
+
+                    <h4><b>5. Master of Computer Applications (MCA under LEET):</b></h4>
+BCA or B.Sc. (IT/Computer Science/Computer Applications degree with Mathematics at +2 level or at Graduation level and should have obtained at least 50% marks (47.50% for SC/ST) level in the qualifying exams.
+
+The admission under this category will be made as per instructions of AICTE/Haryana State Technical Education Society, Panchkula/KUK.
+
+                    <h4><b>6. Bachelor of Vocation: 3 Years (Semester System)</b></h4>
+For Banking Financial Service & Insurance (BFSI):
+10+2 Pass with 45% marks (42.75% marks in case of SC/ST category) in any stream with English as a compulsory subject from CBSE or any other State Education Board.
+
+                        <h3><b>C. Admissions under Tuition Fee Waiver Scheme/ PIO/ FN</b></h3>
+                        The admission under this category will be made as per instructions of AICTE/Haryana State Technical Education Society, Panchkula/KUK.</p>
+
+
+                    </div>
+                </div>
+
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                 <div class="list-group">
+
+                     <a href="programs" class="list-group-item  ">PROGRAMMES OFFERED</a>
+
+                       <a href="elig" class="list-group-item active">ELIGIBILITY</a>
+
+                       <a href="placement" class="list-group-item">PLACEMENTS</a>
+
+
+
+                    </div>
+                </div><!--/.sidebar-offcanvas-->
+            </div><!--/row-->
+        </div>
+
+            <div class="row">
+    	<div class="col-md-12">
+    	    <footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						About us
+					</div>
+					<p class="white-text">
+					Located in the National Capital Region, Panipat Institute of Engineering & Technology (PIET) was established by the Vidyapeeth Education. The founders have a clear vision to provide world-class education and research. In venture of this cherished goal, PIET has achieved many milestones of success. Among some of the best Engineering Colleges in Haryana and National Capital Region, PIET stands out a clear leader. A multidisciplinary institute affiliated to Kurukshetra University, Kurukshetra and approved by AICTE, New Delhi.
+					</p>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Useful Links
+					</div>
+					<div class="footer-links">
+						<a href="program">
+							Programmmes Offered
+						</a>
+                        <a href="elig">
+                            Eligibility
+                        </a>
+						<a href="placement">
+							Placements
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Quick Links
+					</div>
+					<div class="footer-links">
+						<a href="login">
+                           Student Login
+						</a>
+                        <a href="tlogin">
+                            Gate Pass
+						</a>
+						<a href="feedbk">
+							Feedback
+						</a>
+
+					</div>
+				</div>
+				<div class="col-md-3 m-b-30">
+					<div class="footer-title m-t-5 m-b-20 p-b-8">
+						Location
+					</div>
+					<div class="footer-links">
+						<p>
+							PIET Campus:<br>
+              70, Milestone GT Road, Samalkha,<br>
+              Panipat, Haryana - 132102<br>
+              India<br>
+              Call: 1800 3000 6884 (Toll Free),<br>0180-2569700, 2569799, 2569699<br>
+						</p>
+						<p>
+              Email:info@piet.co.in
+            </p>
+
+					</div>
+
+					<div class="footer-social-links m-t-30">
+						<li>
+						<a href="https://www.facebook.com/Pietofficial/">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="https://twitter.com/PIETPanipat">
+								<i class="fa fa-twitter" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.linkedin.com/school/pietpanipat/">
+								<i class="fa fa-linkedin" aria-hidden="true"></i>
+							</a>
+							<a href="https://www.youtube.com/c/PietTalkies">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+                           <a href="https://plus.google.com/u/0/+PietCoInpanipat/">
+                               <i class="fa fa-google" aria-hidden="true"></i></a>
+                           <a href="https://in.pinterest.com/pietpanipat/">
+								<i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                           <a href="https://www.instagram.com/connectatpiet/">
+								<i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</div>
+                </div>
+            </div>
+	</footer>
+	<div class="footer-bottom">
+	</div>
+    	</div>
+	</div>
+
+</body>
+</html>

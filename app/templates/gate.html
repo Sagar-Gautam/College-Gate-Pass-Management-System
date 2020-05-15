@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>gate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+</head>
+<body>
+<h1><b><i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp GATE PASS</i></b></h1>
+<br>
+<div class="container">
+<div class="jumbotron">
+
+  <form class="form-horizontal" action="gate" method="post" enctype="multipart/form-data">{% csrf_token %}
+
+
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name">NAME</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="fname"> FATHER NAME</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="fname" placeholder="Enter father Name" name="fname" required="required">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="rol">ROLL NO.</label>
+      <div class="col-sm-4">
+        <input type="tel" class="form-control" id="rol" placeholder="Enter Roll No." name="roll" required="required">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="branch">BRANCH</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="branch" placeholder="Enter Branch." name="branch" required="required">
+      </div>
+    </div>
+         <div class="form-group">
+      <label  class="control-label col-sm-2" for="gen">GENDER</label>
+          <div class="col-sm-4">
+      <select class="form-control" id="gen" name = "gender" required="required">
+        <option>Choose Gender</option>
+          <option>MALE</option>
+        <option>FEMALE</option>
+        <option>OTHER</option>
+      </select>
+          </div>
+      </div>
+
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="num">CONTACT NUMBER</label>
+      <div class="col-sm-4">
+        <input type="tel" class="form-control" id="num" placeholder="Enter Contact Number" name="number" required="required">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="visit">PURPOSE OF VISIT</label>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" id="visit" placeholder="Enter Purpose Of Visit" name="pov" required="required">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="roll">DATE</label>
+      <div class="col-sm-4">
+        <input type="date" class="form-control" id="roll" placeholder="Enter date" name="date" required="required">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="en">ENTRY TIME</label>
+      <div class="col-sm-4">
+        <input type="time" class="form-control" id="en" placeholder="Enter Roll No." name="entry" required="required">
+      </div>
+    </div>
+       <div class="form-group">
+      <label class="control-label col-sm-2" for="ex">EXIT TIME</label>
+      <div class="col-sm-4">
+        <input type="time" class="form-control" id="ex" placeholder="Enter Roll No." name="exit" required="required">
+      </div>
+    </div>
+
+
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-success">Create Gate Pass</button>
+      </div>
+    </div>
+
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
